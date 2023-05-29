@@ -7,6 +7,8 @@
  * @vue-event {Object} filterSelected - Emit selected item object with its icon and text when clicked
  */
 
+import Icon from './icon.js';
+
 var currentFilterBoxRef= null;
 const FilterBox ={
 	name: 'FilterBox',
@@ -109,3 +111,4 @@ const FilterBox ={
 };
 
 if (typeof module !== 'undefined') module.exports = { FilterBox }
+export default FilterBox;

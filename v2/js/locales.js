@@ -2,6 +2,7 @@
  * @module Locales
  * @desc This is a localization component, it is used to change and load different languages (for test)
  */
+import l10N from "../lib/l10N.js"
 
 // Locales component
 const Locales = {
@@ -37,23 +38,16 @@ const Locales = {
     },
     methods: {
         initL: function () {
-            const vm = this;
-            requirejs(["l10N"], function (l10N) {
-                vm.l10N = l10N;
-                console.log(vm.l10N);
-                vm.l10N.initLang();
-            });
+            console.log(l10N);
+            l10N.initLang();
         },
         switchLang: function (lng) {
-            const vm = this;
-            requirejs(["l10N"], function (l10N) {
-                vm.l10N = l10N;
-                console.log(vm.l10N);
-                vm.l10N.switchTo(lng);
-            });
+            console.log(l10N);
+            l10N.switchTo(lng);
         }
     },
 };
 
 if (typeof module !== 'undefined') module.exports = { Locales };
+export default Locales;
 

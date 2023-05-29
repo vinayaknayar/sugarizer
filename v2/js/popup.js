@@ -8,6 +8,7 @@
  * @vue-data {Number} [yData=null] - top position of popup component
  * @vue-event {String} itemisClicked - Emit selected item when clicked in "'popup component id'_'selected item name'" format
  */
+import Icon from './icon.js';
 const Popup ={
 	name: 'Popup',
 	template: ` <div ref="homePopup" class="home-activity-popup" 
@@ -158,3 +159,4 @@ const Popup ={
 };
 
 if (typeof module !== 'undefined') module.exports = { Popup }
+export default Popup;

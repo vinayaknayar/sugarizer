@@ -7,6 +7,9 @@
  * @vue-data {Number} [yData=null] - top position of popup
  * @vue-event {Object} optionSelected - Emit selected option's icon and name when a option is clicked
  */
+import Popup from './popup.js';
+import Icon from './icon.js';
+
 const SelectBox ={
 	name: 'SelectBox',
 	template: `
@@ -116,3 +119,4 @@ const SelectBox ={
 };
 
 if (typeof module !== 'undefined') module.exports = { SelectBox }
+export default SelectBox;

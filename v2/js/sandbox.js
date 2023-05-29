@@ -1,10 +1,12 @@
-// Rebase require directory
-requirejs.config({
-	baseUrl: "lib",
-	paths: {
-		activity: "../js",
-	}
-});
+import Icon from "./icon.js";
+import IconButton from "./iconbutton.js";
+import SearchField from "./searchfield.js";
+import Popup from "./popup.js";
+import SelectBox from "./selectbox.js";
+import FilterBox from "./filterbox.js";
+import Password from "./password.js";
+import Dialog from "./dialog.js";
+import Locales from "./locales.js";
 
 const app = Vue.createApp({
 	components: {

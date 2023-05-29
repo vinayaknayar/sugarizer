@@ -202,3 +202,4 @@ const Icon ={
 };
 
 if (typeof module !== 'undefined') module.exports = { Icon }
+export default Icon;

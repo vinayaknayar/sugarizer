@@ -11,6 +11,8 @@
  * @vue-event {} onOk - emit ok event to save the changes and close the dialogBox
  * @vue-event {String} searchInput - emit inputString of the search-bar whenever its changes 
  */
+import Icon from './icon.js';
+import SearchField from './searchfield.js';
 
  const Dialog ={
 	name: 'Dialog',
@@ -60,3 +62,4 @@
 };
 
 if (typeof module !== 'undefined') module.exports = { Dialog }
+export default Dialog;

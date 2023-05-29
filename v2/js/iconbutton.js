@@ -14,6 +14,8 @@
  * @vue-data {Boolean} [disabledData=false] - to change the diability condition
  * @vue-event {Object} buttonClick - Emit buttonClick event to perform required action
  */
+import Icon from './icon.js'
+
 const IconButton ={
 	name: 'IconButton',
 	template: `<div :class="this.disabledData? 'web-activity-disable icon-button': 'icon-button'"
@@ -70,4 +72,6 @@ const IconButton ={
 	}
 };
 
+
 if (typeof module !== 'undefined') module.exports = { IconButton }
+export default IconButton;

@@ -60,3 +60,4 @@ const SearchField ={
 };
 
 if (typeof module !== 'undefined') module.exports = { SearchField }
+export default SearchField;

@@ -261,3 +261,4 @@ const Password ={
 };
 
 if (typeof module !== 'undefined') module.exports = { Password }
+export default Password;
